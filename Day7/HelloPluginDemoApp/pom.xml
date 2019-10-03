@@ -1,0 +1,47 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.amdocs</groupId>
+	<artifactId>amdocs-plugin-demo</artifactId>
+	<version>1.2.3</version>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<executions>
+					<execution>
+						<id>default-list-directory</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+					<configuration>
+						<executable>ls</executable>
+						<arguments>
+							<argument>-l</argument>
+							<argument>.</argument>
+						</arguments>
+					</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.amdocs</groupId>
+				<artifactId>amdocs-hello-plugin</artifactId>
+				<version>1.0.0</version>
+				<executions>
+					<execution>
+						<id>default-hello</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>hello</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
