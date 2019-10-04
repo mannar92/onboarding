@@ -7,4 +7,6 @@ ENV no_proxy_hosts localhost,127.0.0.1,10.236.52.193
 
 RUN apt-get update && apt-get install default-jdk git -y
 
+git config --global http.sslVerify false
+
 COPY apache-maven-3.6.1-bin.tar.gz /root/apache-maven-3.6.1-bin.tar.gz  
