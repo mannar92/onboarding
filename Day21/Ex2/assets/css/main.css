@@ -1,0 +1,43 @@
+
+.para1, .para2 { 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20pt;
+    text-align: right;
+    padding: 10px;
+    background-color: pink;
+    color: black;
+    border: 8px dashed rgb(86, 86, 209)
+}
+
+h1 { 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60pt;
+    text-align: center;
+    color: blue;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+    text-align: left;
+    background-color: rgb(86, 86, 209);
+    color: white;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px; 
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: red;
+}
+
+.footer {
+    font-family: sans-serif;
+    font-size: 60pt;
+    text-align: center;
+    color: blue;
+}

@@ -1,0 +1,6 @@
+P4IGNORE=.p4ignore
+P4CHARSET=none
+P4INITROOT=$configdir
+P4USER=alex
+P4PORT=rsh:/bin/sh -c "umask 077 && exec p4d -i -J off -r '$configdir/.p4root'"
+P4CLIENT=alex-dvcs-1570776674
